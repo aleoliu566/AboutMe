@@ -1,16 +1,30 @@
+
 $(document).ready(function(){
+	// var width = window.innerWidth;
+	// var barHeight;
+	// if(width >= 660px){
+	// 	barHeight = 80;
+	// }
+	// else /*if(width < 660)*/{
+	var	barHeight = 170;
+
+	// }
+	// var a = "atcc.html";
 	$("#basic-data").click(function(){
-		$("html,body").animate({scrollTop:$("#data").offset().top-170}, 800);
+		$("html,body").animate({scrollTop:$("#data").offset().top-barHeight}, 800);
 		$("#small-bar").css("display","none");
 	});
 	$("#basic-personality").click(function(){
-		$("html,body").animate({scrollTop:$("#personality").offset().top-170}, 800);
+		$("html,body").animate({scrollTop:$("#personality").offset().top-barHeight}, 800);
+		$("#small-bar").css("display","none");
 	});
 	$("#basic-ability").click(function(){
-		$("html,body").animate({scrollTop:$("#ability").offset().top-156}, 800);
+		$("html,body").animate({scrollTop:$("#ability").offset().top-barHeight}, 800);
+		$("#small-bar").css("display","none");
 	});
 	$("#basic-part-time").click(function(){
-		$("html,body").animate({scrollTop:$("#part-time").offset().top-156}, 800);
+		$("html,body").animate({scrollTop:$("#part-time").offset().top-barHeight}, 800);
+		$("#small-bar").css("display","none");
 	});
 	$("#self-introduction").mouseover(function(){
 		$("#small-bar").css("display","block");
@@ -18,12 +32,89 @@ $(document).ready(function(){
 	$("#self-introduction").mouseout(function(){
 		$("#small-bar").css("display","none");
 	});
+	// function goIndex(){
+	// javascript:location.href="index.html";
+	// // $("html,body").animate({scrollTop:$("#personality").offset().top-170}, 800);
+	// }
+	// if(aaa){
+	// 	$("html,body").animate({scrollTop:$("#part-time").offset().top-156}, 800);
+	// }
+
 });
-jQuery.noConflict();
+// jQuery.noConflict();
 
 function goIndex(){
 	javascript:location.href="index.html";
 	// $(document).ready(function(){
 	// $("html,body").animate({scrollTop:$("#personality").offset().top-170}, 800);
 	// });
+	aaa = true;
 }
+
+function run() {
+    var d = document.getElementsByTagName("iframe");
+    var s = document.getElementById("haga");
+    var li;
+    s.innerHTML = d[0];
+    d[0].src = "hagawan.html";
+}
+function run1() {
+    var d = document.getElementsByTagName("iframe");
+    var s = document.getElementById("haga");
+    var li;
+    s.innerHTML = d[0];
+    d[0].src = "atcc.html";
+}
+function run2() {
+    var d = document.getElementsByTagName("iframe");
+    var s = document.getElementById("haga");
+    var li;
+    s.innerHTML = d[0];
+    d[0].src = "hoperead.html";
+}
+
+
+
+
+// ------------------------------------------------------------------------
+
+(function($){
+  
+    var jump=function(e)
+    {
+       if (e){
+           e.preventDefault();
+           var target = $(this).attr("href");
+       }else{
+           var target = location.hash;
+       }
+
+       $('html,body').animate(
+       {
+           scrollTop: $(target).offset().top-170
+       },1000,function()
+       {
+           location.hash = target;
+       });
+
+    }
+
+    $('html, body').hide()
+
+    $(document).ready(function()
+    {
+        $("a[href^='#']").bind("click", jump);
+
+        if (location.hash){
+            setTimeout(function(){
+                $('html, body').scrollTop(0).show()
+                jump()
+            }, 0);
+        }else{
+          $('html, body').show()
+        }
+    });
+  
+})(jQuery)
+
+

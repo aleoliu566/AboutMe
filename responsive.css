@@ -1,28 +1,38 @@
-@media screen and (min-width: 480px){
-	#primary{
-		width: 50%;
-		float: left;
-	}
-	#secondary{
-		width: 40%;
-		float: right;
-	}
+@media screen and (min-width: 560px){
+	
 	#gallery li{
-		width: 28.333333%;
+		width: 28.3333%;
 	}
 	#gallery li:nth-child(4n){
 		clear: both;
 	}
+	.basic{
+		padding: 0 10%;
+		/*border: 1px solid black;*/
+	}
 	.profile-photo{
-		float: left;
-		margin-right: 5%;
-		margin-bottom: 100px; 
+		margin-top: 3%;
+		float: right;
+		/*border: 5px solid green;*/
+	}
+}
+@media screen and (max-width: 560px ){
+	#gallery li:nth-child(2n+1){
+		clear: left;
 	}
 }
 
 @media screen and (min-width: 660px){
+	.wrapper{
+	max-width: 1200px;
+	margin-top: 90px;
+	padding-right: 10%;
+	padding-left: 10%;
+	clear: both;
+	}
 	header{
 		display: flex;
+		padding-top: 0.5%;
 	}
 	header a{
 		flex:1;
@@ -47,5 +57,53 @@
 	nav a:hover{
 	background-color: white;
 	/*border-radius: 10%;*/
+	}
+	/*********basic***********/
+	#ability-table{
+		display: flex;
+	}
+	/***********contact***********/
+	#contact-div{
+		display: flex;
+		min-height: 480px;
+		margin-top:15%;
+	}
+	#primary{
+		flex: 1;
+		margin-top: 1%;
+		text-align: center;
+	}
+	#primary div{
+		width: 100%;
+	}
+	#primary img{
+		width: 60%;
+	}
+	#secondary li{
+		width: 50%;
+	}
+	#secondary div{
+		display: flex; 
+		width: 100%;
+		text-align: center;
+	}
+	#secondary{
+		flex: 1;
+		margin-top: 0;
+	}
+	/***********activity***********/
+	.activity-experience{
+		/*padding: 0 auto;*/
+		width: 80%;
+		/*border: 1px solid red;*/
+		margin: 0 auto;
+	}
+	.activity-picture img{
+		width: 45%;
+		margin:2%;
+	}
+	#video>iframe{
+		width:560px; 
+		height:315px;
 	}
 }

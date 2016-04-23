@@ -10,6 +10,7 @@
 		<script language="javascript" src="main.js"></script>
 	</head>
 	<body>
+		<div id="total">
 		<header>
 			<a href="index.html" id ="logo">
 				<h1>劉皪</h1>
@@ -19,7 +20,6 @@
 				<ul id ="navigation">
 					<li id="self-introduction" ><a class="selected" href="index.html">自我介紹</a>
 						<ul id="small-bar">
-							<!-- <li id="a"><a href="index.html#basic-information">基本資料</a></li> -->
 							<li><a id="basic-data">基本資料</a></li>
 							<li><a id="basic-personality">個性及興趣</a></li>
 							<li><a id="basic-ability">專業能力</a></li>
@@ -27,7 +27,7 @@
 							<li><a id=""></a></li>
 						</ul>
 					</li>
-					<li><a href="about.html">人生經歷</a></li>
+					<li><a href="activity.html">活動經驗</a></li>
 					<li><a href="contact.html">聯絡方式</a></li>	
 				</ul>
 			</nav>
@@ -35,8 +35,10 @@
 		<div class="wrapper">
 			<section>
 				<div class="basic" id="data">
-					<img class="profile-photo" src="img/aboutme.jpg" alt="photo">
+					
 					<h3>基本資料</h3>
+					<img class="profile-photo" src="img/aboutme.jpg" alt="photo">
+					
 					<ul>
 						<li>姓&emsp;&emsp;名：劉 皪</li>
 						<li>英文姓名：Leo</li>
@@ -70,6 +72,7 @@
 			<section>
 				<div class="basic" id="ability">
 					<h3>專業能力</h3>
+					<div id="ability-table">
 					<table>
 						<tr>
 							<td colspan="2">軟體</td>
@@ -112,6 +115,7 @@
 							<td>◆ ◆ ◆ ◆ ◇  </td>
 						</tr>
 					</table>
+					<div>
 				</div>
 			</section>
 			<section>
@@ -156,13 +160,13 @@
 						</li>
 						<li>
 							<a href="img/nccuone.jpg">
-								<img src="img/test3.jpg" alt="hi">
+								<img src="img/nccuone.jpg" alt="hi">
 								<p>政大宿舍望出去</p>
 							</a>
 						</li>
 						<li>
 							<a href="img/nccutwo.jpg">
-								<img src="img/test2.jpg" alt="test2">
+								<img src="img/nccutwo.jpg" alt="test2">
 								<p>政大</p>
 							</a>
 						</li>
@@ -181,5 +185,6 @@
 				<p>&copy; 2016 劉 皪</p>
 				<div></div>
 			</footer>
+		</div>
 	</body>
 </html>

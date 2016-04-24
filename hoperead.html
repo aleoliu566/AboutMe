@@ -5,8 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<title></title>
+	<script>
+　 　　　 function resize(){
+		   parent.document.getElementById("mainframe").height=document.body.height; 　
+　 　　　　 parent.document.getElementById("mainframe").height=document.body.scrollHeight; 　　　
+　　　　 }
+　　 </script>
 </head>
-<body>
+<body onload="resize();">
 	<p>希望閱讀安安</p>
+	<div style="width: 100%;height: 800px; background-color: black;"></div>
+	<p>aaa</p>
 </body>
 </html>

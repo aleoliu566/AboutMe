@@ -51,7 +51,6 @@ $(document).ready(function(){
 // jQuery.noConflict();
 
 
-
 function goIndex(){
 	javascript:location.href="index.html";
 	// $(document).ready(function(){
@@ -81,12 +80,6 @@ function goIndex(){
 //     s.innerHTML = d[0];
 //     d[0].src = "hoperead.html";
 // }
-function getHeight(){
-	var a = document.getElementsByTagName("iframe");
-
-}
-
-
 // ------------------------------------------------------------------------
 
 (function($){

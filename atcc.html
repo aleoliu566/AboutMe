@@ -6,8 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" >
 	<title></title>
+	<script>
+　 　　　 function resize(){
+		   parent.document.getElementById("mainframe").height=document.body.height; 　
+　 　　　　 parent.document.getElementById("mainframe").height=document.body.scrollHeight; 　　　
+　　　　 }
+　　 </script>
 </head>
-<body>
+<body onload="resize();">
 	<h1>安安這是atcc喔</h1>
 </body>
 </html>

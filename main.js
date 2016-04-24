@@ -1,15 +1,23 @@
 
 $(document).ready(function(){
-	// var width = window.innerWidth;
-	// var barHeight;
-	// if(width >= 660px){
-	// 	barHeight = 80;
-	// }
-	// else /*if(width < 660)*/{
-	var	barHeight = 170;
+	// var $window = $(window);
+  	function checkWidth() {
+      // var windowsize = $window.width();//取得螢幕寬度
+      location.reload(); //重新整理刷新網頁
+  	}
+  	var resizeId;
+  	$(window).resize(function() {
+  	  clearTimeout(resizeId);
+  	  resizeId = setTimeout(checkWidth, 500); //當停止螢幕拖拉才執行
+ 	});
 
-	// }
-	// var a = "atcc.html";
+	var	barHeight;
+	if(window.matchMedia("(min-width:660px)").matches){
+		 barHeight=90;
+	}else{
+		 barHeight=170;
+	}
+
 	$("#basic-data").click(function(){
 		$("html,body").animate({scrollTop:$("#data").offset().top-barHeight}, 800);
 		$("#small-bar").css("display","none");
@@ -51,27 +59,27 @@ function goIndex(){
 	aaa = true;
 }
 
-function run() {
-    var d = document.getElementsByTagName("iframe");
-    var s = document.getElementById("haga");
-    var li;
-    s.innerHTML = d[0];
-    d[0].src = "hagawan.html";
-}
-function run1() {
-    var d = document.getElementsByTagName("iframe");
-    var s = document.getElementById("haga");
-    var li;
-    s.innerHTML = d[0];
-    d[0].src = "atcc.html";
-}
-function run2() {
-    var d = document.getElementsByTagName("iframe");
-    var s = document.getElementById("haga");
-    var li;
-    s.innerHTML = d[0];
-    d[0].src = "hoperead.html";
-}
+// function run() {
+//     var d = document.getElementsByTagName("iframe");
+//     var s = document.getElementById("haga");
+//     var li;
+//     s.innerHTML = d[0];
+//     d[0].src = "hagawan.html";
+// }
+// function run1() {
+//     var d = document.getElementsByTagName("iframe");
+//     var s = document.getElementById("haga");
+//     var li;
+//     s.innerHTML = d[0];
+//     d[0].src = "atcc.html";
+// }
+// function run2() {
+//     var d = document.getElementsByTagName("iframe");
+//     var s = document.getElementById("haga");
+//     var li;
+//     s.innerHTML = d[0];
+//     d[0].src = "hoperead.html";
+// }
 
 
 

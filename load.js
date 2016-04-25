@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$( "#result" ).load( "hagawan.html" );
+	
 	$("#atcc").click(function(){
 		$( "#result" ).load( "atcc.html" );
 	});
@@ -9,5 +10,7 @@ $(document).ready(function(){
 	$("#hoperead").click(function(){
 		$( "#result" ).load( "hoperead.html" );
 	});
-
+	$("#dragonboat").click(function(){
+		$( "#result" ).load( "dragonboat.html" );
+	});
 })

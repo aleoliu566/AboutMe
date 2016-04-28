@@ -22,7 +22,7 @@ $(document).ready(function(){
 		$("#small-bar").css("display","none");
 	});
 	$("#basic-picture").click(function(){
-		$("html,body").animate({scrollTop:$("#photo").offset().top-barHeight}, 800);
+		$("html,body").animate({scrollTop:$("#picture").offset().top-barHeight}, 800);
 		$("#small-bar").css("display","none");
 	});
 	$("#self-introduction").mouseover(function(){
@@ -48,7 +48,7 @@ $(document).ready(function(){
            scrollTop: $(target).offset().top-barHeight },800,function()
        {
            location.hash = target;
-       });
+       }); 
     }
     $('html, body').hide()
     $(document).ready(function()

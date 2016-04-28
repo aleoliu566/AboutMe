@@ -1,7 +1,7 @@
 var	barHeight;
 $(document).ready(function(){	
 	if(window.matchMedia("(min-width:660px)").matches){
-		 barHeight=80;
+		 barHeight=90;
 	}else{
 		 barHeight=170;
 	}
@@ -45,8 +45,7 @@ $(document).ready(function(){
        }
        $('html,body').animate(
        {
-           scrollTop: $(target).offset().top-barHeight
-       },800,function()
+           scrollTop: $(target).offset().top-barHeight },800,function()
        {
            location.hash = target;
        });

@@ -218,23 +218,14 @@ footer{
 #video{
 	text-align: center;
 }
+
 #choose a{
-	/*width:120px;height:40px;border:2px blue none;*/
-	/*color: green;*/
-	/*float: left;*/
-	text-align: left;
-	background-color: #EEE9E9;
-	/*color: #999;*/
-	/*border: none;*/
-}
-#choose .none{
-	display: none;
-}
-#choose a{
-	color: #999;
+	color: #4e72b8;
+	/*text-decoration: underline;*/
 }
 #choose a:hover{
 	color: #0d3d69;
+	text-decoration: underline;
 }
 /*********   Contact     ***********/
 .contact-info{

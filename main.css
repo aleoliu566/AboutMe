@@ -4,6 +4,7 @@ body{
 	color: #999;
 	margin: 0;
 	min-width: 274px;
+	font-family: Arial,sans-serif;
 }
 /*header以外*/
 .wrapper{
